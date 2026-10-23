@@ -2,7 +2,7 @@
 
 ## 技术栈（严格遵守，不得引入新依赖，除非用户明确同意）
 - JDK 21 / Spring Boot 3.3.5 / Maven
-- MyBatis-Plus 3.5.9（boot3 starter）/ MySQL 8 / Redis 7（07 章引入）
+- MyBatis-Plus 3.5.9（boot3 starter + mybatis-plus-jsqlparser 伴生包，分页插件需要）/ MySQL 8 / Redis 7（07 章引入）
 - 认证 Sa-Token 1.39（08 章引入）/ 文档 Knife4j 4.5（09 章引入）/ Lombok + Hutool 5.8
 
 ## 项目结构
