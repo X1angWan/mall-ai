@@ -20,7 +20,13 @@ public enum ErrorCode implements IErrorCode {
 
     /** 商品模块 */
     PRODUCT_NOT_FOUND(10001, "商品不存在"),
-    PRODUCT_OFF_SHELF(10002, "商品已下架");
+    PRODUCT_OFF_SHELF(10002, "商品已下架"),
+    STOCK_NOT_ENOUGH(10003, "库存不足"),
+
+    /** 订单模块 */
+    ORDER_NOT_FOUND(10010, "订单不存在"),
+    ORDER_STATUS_INVALID(10011, "订单状态不允许该操作"),
+    DUPLICATE_REQUEST(10012, "重复请求，请勿重复提交");
 
     private final int code;
     private final String message;
