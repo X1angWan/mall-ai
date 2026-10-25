@@ -14,6 +14,7 @@
 - 所有接口返回 Result<T>；业务异常统一 throw BusinessException(ErrorCode)
 - 逻辑删除字段 deleted，乐观锁字段 version，create_time/update_time 自动填充
 - 事务加在 ServiceImpl 方法上，事务内禁止远程调用与耗时 IO
+- 注释规范：类与方法一律中文 Javadoc（职责/参数/返回值/关键取舍），非显而易见的逻辑加行内注释说明意图
 
 ## 常用命令
 - 编译 mvn compile / 测试 mvn test / 启动 mvn spring-boot:run
