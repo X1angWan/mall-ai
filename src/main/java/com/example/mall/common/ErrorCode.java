@@ -16,7 +16,11 @@ public enum ErrorCode implements IErrorCode {
     SYSTEM_ERROR(500, "系统繁忙，请稍后重试"),
 
     /** 通用业务错误（细化错误码由各模块追加，从 10001 起） */
-    BUSINESS_ERROR(10000, "业务处理失败");
+    BUSINESS_ERROR(10000, "业务处理失败"),
+
+    /** 商品模块 */
+    PRODUCT_NOT_FOUND(10001, "商品不存在"),
+    PRODUCT_OFF_SHELF(10002, "商品已下架");
 
     private final int code;
     private final String message;
